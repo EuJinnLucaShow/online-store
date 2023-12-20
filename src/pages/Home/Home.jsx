@@ -1,8 +1,8 @@
 function Home() {
   return (
-    <>
-<div>Home Page</div>
-    </>
+    
+<div style={{display: 'flex', justifyContent: 'center', marginTop: '100px' }}>Home Page</div>
+    
   );
 }
 

@@ -1,8 +1,8 @@
 function Catalog() {
   return (
-    <>
-<div>Catalog Page</div>
-    </>
+    
+<div style={{display: 'flex', justifyContent: 'center', marginTop: '100px'}}>Catalog Page</div>
+    
   );
 }
 
