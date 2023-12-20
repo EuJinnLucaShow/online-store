@@ -1,4 +1,5 @@
-import React from 'react'
+import { NavLink } from 'react-router-dom';
+import './index.css'
 
 export const Header = () => {
     return (
@@ -8,12 +9,14 @@ export const Header = () => {
                     <div className="header__logo">
                         <svg width="69" height="73" viewBox="0 0 69 73" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g id="Logo">
-                                <path id="logo" d="M3 3V70M3 3L66 70M3 3H66M3 70L66 3M3 70H66M66 3V70" stroke="#6B6666" stroke-width="5"/>
+                                <path id="logo" d="M3 3V70M3 3L66 70M3 3H66M3 70L66 3M3 70H66M66 3V70" stroke="#6B6666" strokeWidth="5"/>
                             </g>
                         </svg>
-                        <span>Звукоряд</span>
+                         <NavLink to="/">
+                            <span>Звукоряд</span>
+                        </NavLink>
                     </div>
-                    <button className="header__catalog">Каталог</button>
+                    <NavLink to="/catalog" className="header__catalog">Каталог</NavLink>
                 </div>
                 <div className="header__input">
                     <input type="text" placeholder='Що ви шукаєте?'/>

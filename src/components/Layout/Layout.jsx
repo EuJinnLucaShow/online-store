@@ -1,18 +1,12 @@
 import { Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
-import { NavLink } from 'react-router-dom';
+import { Header } from '../Header/Header';
+
 
 export default function Layout() {
   return (
       <> 
-      <div style={{display: 'flex', justifyContent: 'center', gap: '100px' }}>
-        <NavLink to="/">
-          <span>Home</span>         
-        </NavLink>        
-        <NavLink to="/catalog">
-          <span>Catalog</span>         
-        </NavLink>     
-      </div>      
+     <Header/>
       <Suspense fallback={'Loading...'}>
         <main>
           <Outlet />
