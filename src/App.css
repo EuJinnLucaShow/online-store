@@ -1,3 +1,4 @@
+/*
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -39,4 +40,109 @@
 
 .read-the-docs {
   color: #888;
+}
+*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/*===========================================================================================================*\
+#components
+\*===========================================================================================================*/
+.header {
+  background: #342D2D;
+  padding: 20px 0;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1540px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header__item {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.header__logo {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__logo svg {
+  width: 64px;
+  height: 64px;
+}
+
+.header__logo span {
+  font-size: 36px;
+  font-weight: 400;
+  color: #6B6666;
+}
+
+.header__catalog {
+  padding: 13px 36px;
+  font-size: 36px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.58);
+  background: rgba(123, 116, 116, 0.54);
+  cursor: pointer;
+}
+
+.header__input {
+  max-width: 859px;
+  width: 100%;
+  height: 52px;
+  position: relative;
+  font-size: 24px;
+  line-height: 24px;
+  resize: none;
+}
+
+.header__input input {
+  position: relative;
+  width: calc(100% - 153px);
+  height: 100%;
+  padding-left: 55px;
+  padding-right: 5px;
+  font-size: 24px;
+  line-height: 24px;
+  outline: none;
+}
+
+.header__input svg {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+}
+
+.header__input button {
+  height: 100%;
+  border: none;
+  font-size: 24px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.58);
+  padding: 10px 37px;
+  background: #736565;
+  cursor: pointer;
+}
+
+.header__curt svg,
+.header__call svg {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
 }
