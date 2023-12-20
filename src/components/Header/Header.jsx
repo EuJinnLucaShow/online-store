@@ -1,6 +1,6 @@
-import { NavLink } from "react-router-dom";
-import icon from "../../assets/icon.svg";
-import "./index.css";
+import { NavLink } from 'react-router-dom';
+import icon from '../../assets/icon.svg';
+import './index.css';
 
 export const Header = () => {
   return (
@@ -9,7 +9,7 @@ export const Header = () => {
         <div className="header__item">
           <div className="header__logo">
             <svg>
-              <use xlinkHref={`${icon}#icon-logo`}></use>
+              <use href={`${icon}#icon-logo`}></use>
             </svg>
             <NavLink to="/">
               <span>Sound Line</span>
