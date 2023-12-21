@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import icon from '../../assets/icon.svg';
+import logotip from '../../assets/Shopping cart.svg';
 import './index.css';
 
 export const Header = () => {
@@ -28,7 +29,7 @@ export const Header = () => {
         </div>
         <div className="header__curt">
           <svg>
-            <use href={`${icon}#icon-shopping-cart`}></use>
+            <use href={logotip}></use>
           </svg>
         </div>
         <div className="header__call">
