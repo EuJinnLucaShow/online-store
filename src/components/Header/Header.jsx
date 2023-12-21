@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import icon from '../../assets/icon.svg';
+import Icons from '../Icons/Icons';
 import './index.css';
 
 export const Header = () => {
@@ -9,9 +9,7 @@ export const Header = () => {
         <div className="header__item">
           <div className="header__logo">
             <NavLink to="/">
-              <svg>
-                <use href={`${icon}#icon-logo`}></use>
-              </svg>
+              <Icons icon="logo" />
             </NavLink>
             <span>Звукоряд</span>
           </div>
@@ -21,20 +19,14 @@ export const Header = () => {
         </div>
         <div className="header__input">
           <input type="text" placeholder="Що ви шукаєте?" />
-          <svg>
-            <use href={`${icon}#icon-search`}></use>
-          </svg>
+          <Icons icon="search" />
           <button>Пошук</button>
         </div>
         <div className="header__curt">
-          <svg>
-            <use href={`${icon}#icon-shopping-cart`}></use>
-          </svg>
+          <Icons icon="shopping" />
         </div>
         <div className="header__call">
-          <svg>
-            <use href={`${icon}#icon-phone`}></use>
-          </svg>
+          <Icons icon="phone" />
         </div>
       </div>
     </header>
