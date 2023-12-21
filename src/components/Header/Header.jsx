@@ -8,12 +8,12 @@ export const Header = () => {
       <div className="header__container">
         <div className="header__item">
           <div className="header__logo">
-            <svg>
-              <use href={`${icon}#icon-logo`}></use>
-            </svg>
             <NavLink to="/">
-              <span>Sound Line</span>
+              <svg>
+                <use href={`${icon}#icon-logo`}></use>
+              </svg>
             </NavLink>
+            <span>Звукоряд</span>
           </div>
           <NavLink to="/catalog" className="header__catalog">
             Каталог
