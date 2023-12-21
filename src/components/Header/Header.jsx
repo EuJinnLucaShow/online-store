@@ -22,18 +22,18 @@ export const Header = () => {
         <div className="header__input">
           <input type="text" placeholder="Що ви шукаєте?" />
           <svg>
-            <use xlinkHref={`${icon}#icon-search`}></use>
+            <use href={`${icon}#icon-search`}></use>
           </svg>
           <button>Пошук</button>
         </div>
         <div className="header__curt">
           <svg>
-            <use xlinkHref={`${icon}#icon-shopping-cart`}></use>
+            <use href={`${icon}#icon-shopping-cart`}></use>
           </svg>
         </div>
         <div className="header__call">
           <svg>
-            <use xlinkHref={`${icon}#icon-phone`}></use>
+            <use href={`${icon}#icon-phone`}></use>
           </svg>
         </div>
       </div>

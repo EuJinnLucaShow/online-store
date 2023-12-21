@@ -1,6 +1,5 @@
 import { Route, Routes, Navigate } from 'react-router-dom';
 import { lazy } from 'react';
-// import './App.css'
 
 import Layout from './components/Layout/Layout';
 import { ToastContainer } from 'react-toastify';
@@ -15,7 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="/catalog" element={<Catalog />} />          
+          <Route path="/catalog" element={<Catalog />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Route>
       </Routes>
