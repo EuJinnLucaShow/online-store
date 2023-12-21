@@ -1,97 +1,87 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-a {
-    text-decoration: none;
-}
-
 .footer {
-    padding: 25px 0 14px;
-    background: #7B7474;
+  padding: 25px 0 14px;
+  background: #7b7474;
 }
 
 .footer__container {
-    max-width: 1540px;
-    width: 100%;
-    margin: 0 auto;
+  max-width: 1540px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .footer__top-items {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer__logo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer__logo svg {
-    width: 64px;
-    height: 64px;
+  width: 64px;
+  height: 64px;
 }
 
 .footer__logo span {
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 36px;
-    color: #342D2D;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #342d2d;
 }
 
 .footer__category {
-    max-width: 800px;
-    width: 100%;
-    padding: 38px 0;
+  max-width: 800px;
+  width: 100%;
+  padding: 38px 0;
 }
 
 .footer__category div {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .footer__category a {
-    color: #FFF;
-    font-size: 40px;
-    font-weight: 400;
-    line-height: 40px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
 }
 
 .footer__contacts {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
 .footer__contacts a {
-    color: #FFF;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 24px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .footer__contacts__messengers {
-    width: 212px;
-    display: flex;
-    gap: 40px;
+  width: 212px;
+  display: flex;
+  gap: 40px;
 }
 
 .footer__contacts__messengers svg {
-    width: 44px;
-    height: 44px;
+  width: 44px;
+  height: 44px;
 }
 
 .footer__bottom {
-    margin-top: 30px;
-    text-align: center;
-    gap: 20px;
-    color: #FFF;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 18px;
+  margin-top: 30px;
+  text-align: center;
+  gap: 20px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
 }

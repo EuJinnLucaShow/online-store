@@ -1,34 +1,36 @@
 import { NavLink } from 'react-router-dom';
 import Icons from '../Icons/Icons';
-import './index.css';
+import {
+  Headers,
+  Container,
+  LogoWrapper,
+  FormInput,
+  LogoText,
+  Input,
+  CatalogWrapp,
+} from './Header.styled';
 
 export const Header = () => {
   return (
-    <header className="header">
-      <div className="header__container">
-        <div className="header__item">
-          <div className="header__logo">
-            <NavLink to="/">
-              <Icons icon="logo" />
-            </NavLink>
-            <span>Звукоряд</span>
-          </div>
-          <NavLink to="/catalog" className="header__catalog">
-            Каталог
+    <Headers>
+      <Container>
+        <LogoWrapper>
+          <NavLink to="/">
+            <Icons icon="logo" />
           </NavLink>
-        </div>
-        <div className="header__input">
-          <input type="text" placeholder="Що ви шукаєте?" />
+          <LogoText>Звукоряд</LogoText>
+        </LogoWrapper>
+        <CatalogWrapp>
+          <NavLink to="/catalog">Каталог</NavLink>
+        </CatalogWrapp>
+        <FormInput>
+          <Input type="text" placeholder="Що ви шукаєте?" />
           <Icons icon="search" />
           <button>Пошук</button>
-        </div>
-        <div className="header__curt">
-          <Icons icon="shopping" />
-        </div>
-        <div className="header__call">
-          <Icons icon="phone" />
-        </div>
-      </div>
-    </header>
+        </FormInput>
+        <Icons icon="shopping" />
+        <Icons icon="phone" />
+      </Container>
+    </Headers>
   );
 };
