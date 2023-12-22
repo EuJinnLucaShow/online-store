@@ -18,6 +18,10 @@ export const LogoWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 13px;
+
+  svg {
+    stroke: #6B6666;
+  }
 `;
 
 export const LogoText = styled.span`
