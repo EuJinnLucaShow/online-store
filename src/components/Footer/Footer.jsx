@@ -1,66 +1,61 @@
 import { Link } from 'react-router-dom';
-import icon from '../../assets/icon.svg';
-import './index.css';
+//import icon from '../../assets/icon.svg';
+import Icons from '../Icons/Icons';
+import { Footers, Container, FooterTop, Logo, LogoText, Category, CategoryWrapper, Contacts, Messengers, FooterBottom, FooterBottomText } from './Footer.styled';
 
 export const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="footer__container">
-        <div className="footer__top">
-          <div className="footer__top-items">
-            <Link to={'/'} className="footer__logo">
-              <svg>
-                <use href={`${icon}#icon-logo`}></use>
-              </svg>
-              <span>Звукоряд</span>
-            </Link>
-            <div className="footer__category">
-              <div>
+    <Footers>
+      <Container>
+        <FooterTop>
+          <Link to={'/'}>
+            <Logo>
+              <Icons icon ="logo" />
+              <LogoText>Звукоряд</LogoText>
+            </Logo>
+          </Link>
+            <Category>
+              <CategoryWrapper>
                 <Link to={'#'}>Category</Link>
                 <Link to={'#'}>Category</Link>
                 <Link to={'#'}>Category</Link>
                 <Link to={'#'}>Category</Link>
-              </div>
-              <div>
+              </CategoryWrapper>
+              <CategoryWrapper>
                 <Link to={'#'}>Category</Link>
                 <Link to={'#'}>Category</Link>
                 <Link to={'#'}>Category</Link>
                 <Link to={'#'}>Category</Link>
-              </div>
-            </div>
-            <div className="footer__contacts">
-              <a href="tel:602-579-5633">602-579-5633</a>
-              <a href="tel:602-579-5633">602-579-5633</a>
-              <a href="tel:602-579-5633">602-579-5633</a>
-              <div className="footer__contacts__messengers">
+              </CategoryWrapper>
+            </Category>
+            <Contacts>
+              <Link to="tel:602-579-5633">602-579-5633</Link>
+              <Link to="tel:602-579-5633">602-579-5633</Link>
+              <Link to="tel:602-579-5633">602-579-5633</Link>
+              <Messengers>
                 <Link to={'#'}>
-                  <svg>
-                    <use href={`${icon}#icon-messengers`}></use>
-                  </svg>
+                  <Icons icon ="messengers" />
                 </Link>
                 <Link to={'#'}>
-                  <svg>
-                    <use href={`${icon}#icon-messengers`}></use>
-                  </svg>
+                  <Icons icon ="messengers" />
                 </Link>
                 <Link to={'#'}>
-                  <svg>
-                    <use href={`${icon}#icon-messengers`}></use>
-                  </svg>
+                  <Icons icon ="messengers" />
                 </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="footer__bottom">
-          <p>
+              </Messengers>
+            </Contacts>
+        </FooterTop>
+        <FooterBottom className="footer__bottom">
+          <FooterBottomText>
             Команда розробки: Rogelio Schroeder, Connie Ortiz, Michelle
             Feil,Rogelio Schroeder, Connie Ortiz, Michelle Feil,Rogelio
             Schroeder, Connie Ortiz, Michelle Feil,
-          </p>
-          <p>DATAtime 28/09/76 version ****</p>
-        </div>
-      </div>
-    </footer>
+          </FooterBottomText>
+          <FooterBottomText>
+            DATAtime 28/09/76 version ****
+          </FooterBottomText>
+        </FooterBottom>
+      </Container>
+    </Footers>
   );
 };
