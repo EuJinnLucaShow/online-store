@@ -4,6 +4,10 @@
   margin: 0;
 }
 
+body {
+  background: #B5B0B0;
+}
+
 a {
   text-decoration: none;
   color: inherit;
