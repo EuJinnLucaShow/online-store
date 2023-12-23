@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+//import icon from '../../assets/icon.svg';
 import Icons from '../Icons/Icons';
 import { Footers, Container, FooterTop, Logo, LogoText, Category, CategoryWrapper, Contacts, Messengers, FooterBottom, FooterBottomText } from './Footer.styled';
 
