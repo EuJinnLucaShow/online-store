@@ -1,18 +1,17 @@
 import { useState } from "react";
 import { CardItem } from "../../components/CardItem/CardItem";
 import { useEffect } from "react";
-import axios from "axios";
 import { CardsContainer, LinkTo, Text, LinkWrapper } from "./Home.styled";
 import { MySlider } from "../../components/Slider/Slider";
+import { fetchVinils } from "../../service/Api";
 
 function Home() {
   const [cards, setCards] = useState([]);
 
   const fetchCards = async () => {
       try {
-          const { data } = await axios.get('https://assortment-sounds-api.vercel.app/api/vinils');
-          setCards(data);
-          return data;
+        const cards = await fetchVinils();
+        setCards(cards);
       } catch (error) {
           console.log(error);
       }
